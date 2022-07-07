@@ -6,7 +6,7 @@ function initShoppingList () {
     let form = document.getElementById("item-form")
 
     form.addEventListener("submit", (event) => {
-        handleItemForm(e, form);
+        handleItemForm(event, form);
     });
 }
 
@@ -36,7 +36,7 @@ function addItemToShoppingList() {
 }
 
 function setDeleteButtonEvent (id) {
-    let deleteButton = document.getElementById("button" +id)
+    let deleteButton = document.getElementById("button" +id);
     deleteButton.addEventListener("click", () => {
         removeListItem(id);
     });
